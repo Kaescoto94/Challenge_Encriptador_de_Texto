@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <style>
+            
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="logoHeader"  src="./Images/Logo.png" alt="logoAlura">
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="izquierda">
+                <textarea id="ingresoTexto" class="ingresoTexto" placeholder="Ingrese Texto Aquí" rows="10" cols="50"></textarea>
+                <div class="izquierdaFooter">
+                    <img src="./Images/Exclamación.png" alt="signoDeExclamacion">
+                    <span class="mensajeInfo1">Solo letras minúsculas y sin acentos</span>
+                    <div class="izquierdaBotones">
+                        <button id="botonEncriptar" class="botonEncriptar">Encriptar</button>
+                        <button id="botonDesencriptar" class="botonDesencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div id= "derecha" class="derecha">
+                <img id= "muneco" class="muneco" src="./Images/Muñeco.png" alt="Muñeco">
+                <div>
+                    <textarea id="mensajeFinal" class="mensajeFinal" placeholder="Ningún mensaje fue encontrado" rows="10" cols="50"></textarea>
+                
+                    <p id= "mensajeInfo2" class="mensajeInfo2">Ingrese el texto que desea Encriptar o Desencriptar.</p>
+                </div>
+                <button id="botonCopiar" class="botonCopiar oculto">Copiar</button>
+            </div>
+       </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
